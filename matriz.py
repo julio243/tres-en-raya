@@ -18,9 +18,8 @@ def tabla(f,c,cont):
     else:
         print('sitio ocupado')
         cont=-1
-        
         ingresar.ingresar(cont)        
-
+    
     #imprimir la tabla
     print('   |     |   ')
     print(m[0][0],' | ',m[0][1],' | ',m[0][2])
