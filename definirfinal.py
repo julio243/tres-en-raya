@@ -1,3 +1,3 @@
-#definicion final si es ganador,perdedor o hay empate
-def definicion():
+#definicion final si es ganador o hay empate
+def definicion(m):
     print('hola')

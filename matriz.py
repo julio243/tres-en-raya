@@ -1,13 +1,26 @@
 #creacion de la tabla del juego
+import ingresar,definirfinal
 m=[]
-def tabla(f,c):
-    #creamos la tabla y ahi mismo lo llenamos.
+def tabla(f,c,cont):
+    
+    #creamos la tabla vacia
     for i in range(3):
         m.append([])
         for j in range(3):
             m[i].append(' ')
-    #los datos llegan de ingresar y se guardan y se imprimen
-    m[f][c]='x'
+    
+    #se mira si el sitio esta ocupado, si no lo esta ingresa el signo dependiendo del player
+    if m[f][c]==' ':
+        if cont%2==0:
+            m[f][c]='x'
+        else:
+            m[f][c]='o'
+    else:
+        print('sitio ocupado')
+        cont=-1
+        
+        ingresar.ingresar(cont)        
+
     #imprimir la tabla
     print('   |     |   ')
     print(m[0][0],' | ',m[0][1],' | ',m[0][2])
@@ -18,4 +31,5 @@ def tabla(f,c):
     print('   |     |   ')
     print(m[2][0],' | ',m[2][1],' | ',m[2][2])
     print('   |     |   ')
-
+    
+    definirfinal.definicion(m)
