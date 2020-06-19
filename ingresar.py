@@ -2,7 +2,7 @@
 from matriz import tabla
 def ingresar(c):
         
-    while c<9:       #ponemos un while hasta que no queden movimientos
+    while c<12:       #ponemos un while hasta que no queden movimientos
         #if para si es par le toca jugar a player1 si es impar al player2
         if c%2==0:
             print('PLAYER 1')
